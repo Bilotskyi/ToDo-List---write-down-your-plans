@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Roboto", sans-serif;
+}
+
+#wrapper {
+	padding: 15px;
+	margin: 0 auto;
+	border: 2px solid black;
+	max-width: 600px;
+	box-shadow: 3px 3px 5px 0px black;
+	margin-top: 10px;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.question {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+#answer {
+	font-size: 20px;
+	border: none;
+	margin-bottom: 5px;
+	padding: 2px;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+}
+
+input:active,
+:hover,
+:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+
+#save-btn {
+	display: block;
+	margin: 15px 0px 30px auto;
+	font-weight: 700;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+	/* margin-top: 15px;
+	padding: 5px;
+	font-weight: 700;
+	margin-left: 480px;
+	cursor: pointer;
+	margin-bottom: 20px; */
+}
+
+#todo {
+	display: flex;
+	flex-direction: column;
+}
+
+.todo-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* .list:hover > .list-delete {
+	opacity: 1;
+} */
+
+.list {
+	margin-bottom: 20px;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #d4e5f9;
+	padding-left: 8px;
+	height: 50px;
+	width: 450px;
+	box-shadow: 3px 3px 5px 0px cornflowerblue;
+	/* position: relative; */
+}
+
+.list-delete {
+	background-image: url(../img/icons8-удалить-50.png);
+	/* background-position: -4px -4px; */
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+	margin-bottom: 20px;
+	background-color: white;
+	cursor: pointer;
+	border: none;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	/* opacity: 0;
+	transition: opacity 0.3s ease; */
+}
+
+.list-completed {
+	background-image: url(../img/icons8-отмеченный-чекбокс-50.png);
+	/* background-position: -5px -5px; */
+	background-size: cover;
+	border: none;
+	height: 50px;
+	background-repeat: no-repeat;
+	width: 50px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.active {
+	text-decoration: line-through;
+}
+
+.new-icon {
+	background-image: url(../img/icons8-отмена-50.png);
+	/* background-position: -5px -5px; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	height: 50px;
+	width: 50px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.list-delete-none {
+	display: none;
+}
+
+/* ==================== RESPONSIVE ================ */
+
+/* 320px - 576px */
+@media screen and (max-width: 570px) {
+	.list {
+		width: 350px;
+	}
+
+	.todo-list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.list-delete {
+		margin-right: 10px;
+	}
+}
